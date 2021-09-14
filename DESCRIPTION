@@ -1,0 +1,29 @@
+Package: spluti
+Version: 1.0
+Date: 2021-09-15
+Title: Spline Utilities
+Authors@R: c(person("Zheyuan", "Li", role = c("aut", "cre"),
+                     email = "zheyuan.li@bath.edu",
+                     comment = c(ORCID = "0000-0002-7434-5947")))
+Author: Zheyuan Li [aut, cre] (<https://orcid.org/0000-0002-7434-5947>)
+Maintainer: Zheyuan Li <zheyuan.li@bath.edu>
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, utils, splines, pbs
+Suggests: nlme, lme4
+Description: Univariate splines in regression and smoothing models often adopt
+    basis representation, which is neither intuitive to interpret, nor easy to
+    post-process (like to solve an inverse problem where x-values such that the
+    spline or an order of its derivative equals to a given value is backsolved).
+    This package offers functions that transform regression splines to piecewise
+    polynomials and piecewise polynomial methods for standard generic functions
+    like summary(), plot(), predict() and solve(). Users can then easily export
+    piecewise polynomial equations as formatted strings for pretty print, plot a
+    spline or its derivatives (optionally with knots shown), predict a spline or
+    its derivatives at new x-values, and solve an inverse problem. Extra tools
+    for piecewise polynomials like adding two piecewise polynomials are provided
+    as well. While the package focuses on regression splines, it also transforms
+    interpolation splines and smoothing splines to piecewise polynomials, hence
+    all methods and tools for piecewise polynomials are applicable.
+License: GPL-3
+LazyData: true
+NeedsCompilation: yes
