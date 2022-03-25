@@ -1,0 +1,21 @@
+useDynLib(spluti, .registration = TRUE)
+
+export(BSpl2PP, RegBSpl2PP, ICSpl2PP, SmSpl2PP, Poly2PP,
+       PPAEntry, AddInterceptPP, DerivPP, AddPP, UnshiftPP)
+
+import(graphics, stats, utils, splines)
+import(pbs, pbs)
+
+S3method(summary, PP)
+S3method(print, PP)
+S3method(plot, PP)
+S3method(predict, PP)
+S3method(solve, PP)
+
+S3method(summary, PPA)
+S3method(print, PPA)
+S3method(solve, PPA)
+
+S3method(RegBSpl2PP, lm)
+S3method(RegBSpl2PP, mlm)
+S3method(RegBSpl2PP, lme)
