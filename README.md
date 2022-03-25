@@ -3,7 +3,7 @@ Spline Utilities (and replacing [SplinesUtils](https://github.com/ZheyuanLi/Spli
 
 ## Installation
 
-First install R package `devtools`, then install `SplinesUtils` with R command:
+First install R package `devtools`, then install `spluti` with R command:
 
 ```
 devtools::install_github("ZheyuanLi/spluti")
